@@ -190,7 +190,7 @@ final class OAuth_Client_Registration {
 			return null;
 		}
 
-		$response = wp_remote_get( $url, array( 'timeout' => 10, 'redirection' => 0, 'headers' => array( 'Accept' => 'application/json' ) ) );
+		$response = wp_safe_remote_get( $url, array( 'timeout' => 10, 'redirection' => 0, 'headers' => array( 'Accept' => 'application/json' ) ) );
 		if ( is_wp_error( $response ) ) {
 			set_transient( $cache_key, array(), 60 );
 			return null;

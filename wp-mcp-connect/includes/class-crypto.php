@@ -11,15 +11,7 @@ final class Crypto {
 	}
 
 	public static function random_bytes( $length = 32 ) {
-		try {
-			return random_bytes( $length );
-		} catch ( \Exception $e ) {
-			$out = '';
-			for ( $i = 0; $i < $length; $i++ ) {
-				$out .= chr( mt_rand( 0, 255 ) );
-			}
-			return $out;
-		}
+		return random_bytes( $length );
 	}
 
 	public static function random_hex( $length = 32 ) {
