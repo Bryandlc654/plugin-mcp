@@ -71,6 +71,13 @@ return array(
 			'required'             => array( 'id' ),
 			'additionalProperties' => false,
 		),
+		'permission'  => function ( $args, $actor ) {
+			$comment = get_comment( (int) $args['id'] );
+			if ( $comment && '1' !== $comment->comment_approved && ! Permissions::user_has( $actor['user_id'], 'moderate_comments' ) ) {
+				return array( 'allowed' => false, 'code' => 'insufficient_permissions', 'message' => __( 'You cannot read this comment.', 'wp-mcp-connect' ) );
+			}
+			return array( 'allowed' => true );
+		},
 		'handler'     => function ( $args ) {
 			$comment = get_comment( (int) $args['id'] );
 			if ( ! $comment ) {
