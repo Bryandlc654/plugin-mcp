@@ -1,5 +1,5 @@
 === WP MCP Connect ===
-Contributors: wp-mcp-connect
+Contributors: Next Boost Peru
 Tags: mcp, ai, chatgpt, claude, cursor, oauth
 Requires at least: 6.0
 Tested up to: 6.7

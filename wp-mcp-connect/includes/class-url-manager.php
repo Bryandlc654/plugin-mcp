@@ -167,7 +167,10 @@ class Url_Manager {
 	}
 
 	public static function client_ip() {
-		$keys = array( 'HTTP_CF_CONNECTING_IP', 'HTTP_X_REAL_IP', 'HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR' );
+		$keys = array( 'REMOTE_ADDR' );
+		if ( Plugin::instance()->settings->trust_proxy_headers() ) {
+			$keys = array( 'HTTP_CF_CONNECTING_IP', 'HTTP_X_REAL_IP', 'HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR' );
+		}
 		foreach ( $keys as $key ) {
 			if ( empty( $_SERVER[ $key ] ) ) {
 				continue;

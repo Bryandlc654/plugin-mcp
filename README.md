@@ -1,5 +1,7 @@
 # WP MCP Connect
 
+**Desarrollado por [Next Boost Peru](http://nextboost.business/)**
+
 Convierte cualquier instalación de WordPress en un **servidor MCP** (Model Context Protocol) con autenticación **OAuth 2.1**, listo para conectarse a ChatGPT, Claude, Claude Code, Cursor y otros agentes de IA.
 
 > El código fuente se encuentra en `wp-mcp-connect/`. La documentación técnica completa está en [docs/](docs/) y el diseño en [ARCHITECTURE.md](ARCHITECTURE.md).
