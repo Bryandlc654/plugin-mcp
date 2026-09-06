@@ -1,11 +1,11 @@
-# Pruebas manuales de `wp-mcp-connect`
+# Pruebas manuales de `mcp-connect-wp`
 
 Estas pruebas requieren un WordPress real (local o de desarrollo) con el plugin activo, HTTPS y enlaces permanentes activados.
 
 ## Preparación
 
 1. Instala y activa el plugin.
-2. Ajustes → WP MCP Connect → Diagnóstico: deben pasar HTTPS, enlaces permanentes y las 6 tablas.
+2. Ajustes → MCP Connect for WordPress → Diagnóstico: deben pasar HTTPS, enlaces permanentes y las 6 tablas.
 3. Pestaña Permisos: deja lectura/escritura activas; deja borrado desactivado.
 
 ## 1. Descubrimiento (`/.well-known`)
@@ -18,12 +18,12 @@ curl -s https://TU-SITIO/.well-known/oauth-authorization-server
 Comprueba: ambos devuelven JSON válido con `authorization_servers` / `issuer`, `registration_endpoint`, `token_endpoint`, `code_challenge_methods_supported: ["S256"]`.
 
 Si estás en un subdirectorio (`/es/`), prueba también:
-`https://TU-SITIO/es/wp-json/wp-mcp-connect/v1/.well-known/oauth-protected-resource`.
+`https://TU-SITIO/es/wp-json/mcp-connect-wp/v1/.well-known/oauth-protected-resource`.
 
 ## 2. Reto 401 del MCP
 
 ```bash
-curl -i -X POST https://TU-SITIO/wp-json/wp-mcp-connect/v1/mcp \
+curl -i -X POST https://TU-SITIO/wp-json/mcp-connect-wp/v1/mcp \
   -H 'Content-Type: application/json' \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}'
 ```
@@ -35,7 +35,7 @@ Debe devolver `401` con `WWW-Authenticate: Bearer resource_metadata="...", autho
 ## 3. Registro dinámico (DCR)
 
 ```bash
-curl -s -X POST https://TU-SITIO/wp-json/wp-mcp-connect/v1/oauth/register \
+curl -s -X POST https://TU-SITIO/wp-json/mcp-connect-wp/v1/oauth/register \
   -H 'Content-Type: application/json' \
   -d '{"client_name":"Prueba","redirect_uris":["http://localhost:9876/cb"],"token_endpoint_auth_method":"none","grant_types":["authorization_code","refresh_token"],"response_types":["code"]}'
 ```
@@ -44,7 +44,7 @@ Guarda `client_id` (+ `client_secret` si lo devuelve). Repite el alta dos veces 
 
 ## 4. Flujo de consentimiento (navegador)
 
-1. Con sesión de administrador iniciada: `GET /wp-json/wp-mcp-connect/v1/oauth/authorize?response_type=code&client_id=<id>&redirect_uri=<encoded>&scope=posts:read&state=abc&code_challenge=<48b64>&code_challenge_method=S256&resource=<encoded MCP URL>`.
+1. Con sesión de administrador iniciada: `GET /wp-json/mcp-connect-wp/v1/oauth/authorize?response_type=code&client_id=<id>&redirect_uri=<encoded>&scope=posts:read&state=abc&code_challenge=<48b64>&code_challenge_method=S256&resource=<encoded MCP URL>`.
 2. Debe verse la pantalla de consentimiento con nombre de cliente, usuario, permisos y redirect_uri.
 3. Autoriza → redirige a `redirect_uri` con `code` y `state=abc`.
 4. Cancelar → redirige con `error=access_denied`.
@@ -58,14 +58,14 @@ php -r "echo rtrim(strtr(base64_encode(hash('sha256','verifier-secreto',true)),'
 ## 5. Token
 
 ```bash
-curl -s -X POST https://TU-SITIO/wp-json/wp-mcp-connect/v1/oauth/token \
+curl -s -X POST https://TU-SITIO/wp-json/mcp-connect-wp/v1/oauth/token \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   --data-urlencode grant_type=authorization_code \
   --data-urlencode code=<CODIGO> \
   --data-urlencode client_id=<id> \
   --data-urlencode redirect_uri=<REDIRECT> \
   --data-urlencode code_verifier=verifier-secreto \
-  --data-urlencode resource=https://TU-SITIO/wp-json/wp-mcp-connect/v1/mcp
+  --data-urlencode resource=https://TU-SITIO/wp-json/mcp-connect-wp/v1/mcp
 ```
 
 Comprueba: `access_token`, `refresh_token`, `token_type: Bearer`, `expires_in`, `scope`.
@@ -76,7 +76,7 @@ Comprueba: `access_token`, `refresh_token`, `token_type: Bearer`, `expires_in`, 
 ## 6. Llamada MCP autenticada
 
 ```bash
-curl -s -X POST https://TU-SITIO/wp-json/wp-mcp-connect/v1/mcp \
+curl -s -X POST https://TU-SITIO/wp-json/mcp-connect-wp/v1/mcp \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS>' \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"x","version":"1"}}}'
@@ -122,4 +122,4 @@ Posteriormente el refresh falla. La conexión desaparece del panel (Conexiones a
 ## Notas
 
 - En `localhost` sin HTTPS, el navegador rechazará la pantalla de consentimiento salvo que uses el loopback; pruebas el flujo con `curl -c/-b cookies.txt` para mantener sesión.
-- El descubrimiento raíz (`/.well-known`) requiere reescrituras; si no quieres activarlas, usa las variantes bajo `wp-json/wp-mcp-connect/v1/.well-known/`.
+- El descubrimiento raíz (`/.well-known`) requiere reescrituras; si no quieres activarlas, usa las variantes bajo `wp-json/mcp-connect-wp/v1/.well-known/`.

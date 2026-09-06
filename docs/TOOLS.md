@@ -3,7 +3,7 @@
 El plugin expone 27 herramientas organizadas por ámbito. Cada herramienta está limitada por:
 
 1. El **scopio** concedido en el consentimiento (`categoria:modo`).
-2. El **modo** habilitado en Ajustes → WP MCP Connect → Permisos (si el modo borrado está desactivado, la herramienta no aparece en `tools/list`).
+2. El **modo** habilitado en Ajustes → MCP Connect for WordPress → Permisos (si el modo borrado está desactivado, la herramienta no aparece en `tools/list`).
 3. Las **capacidades reales** del usuario de WordPress autenticado.
 
 ## Inventario

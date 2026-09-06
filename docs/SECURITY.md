@@ -36,4 +36,4 @@ El plugin asume el peor caso: un servidor de WordPress puede estar en internet, 
 
 - El endpoint MCP exige `Authorization: Bearer` (salvo `initialize`… también exige bearer; el reto `401` se emite si falta).
 - Los endpoints OAuth admin (consentimiento/formularios) exigen usuario de `wp-admin` y nonce.
-- Rutas REST de administración del plugin (`/wp-mcp-connect/v1/admin/*`) exigen `manage_options` + nonce REST.
+- Rutas REST de administración del plugin (`/mcp-connect-wp/v1/admin/*`) exigen `manage_options` + nonce REST.

@@ -7,11 +7,11 @@
 error_reporting( E_ALL );
 
 define( 'ABSPATH', __DIR__ . '/../' );
-define( 'WP_MCP_CONNECT_VERSION', '1.0.0' );
-define( 'WP_MCP_CONNECT_FILE', __DIR__ . '/../wp-mcp-connect/wp-mcp-connect.php' );
-define( 'WP_MCP_CONNECT_DIR', __DIR__ . '/../wp-mcp-connect/' );
-define( 'WP_MCP_CONNECT_URL', 'https://example.test/wp-content/plugins/wp-mcp-connect/' );
-define( 'WP_MCP_CONNECT_MIN_CAP', 'manage_options' );
+define( 'MCP_CONNECT_VERSION', '1.0.0' );
+define( 'MCP_CONNECT_FILE', __DIR__ . '/../mcp-connect-wp/mcp-connect-wp.php' );
+define( 'MCP_CONNECT_DIR', __DIR__ . '/../mcp-connect-wp/' );
+define( 'MCP_CONNECT_URL', 'https://example.test/wp-content/plugins/mcp-connect-wp/' );
+define( 'MCP_CONNECT_MIN_CAP', 'manage_options' );
 define( 'HOUR_IN_SECONDS', 60 * 60 );
 define( 'DAY_IN_SECONDS', 24 * 60 * 60 );
 
@@ -138,14 +138,14 @@ $GLOBALS['test_filters'] = array();
 
 spl_autoload_register(
 	function ( $class ) {
-		$prefix = 'WPMCPConnect\\';
+		$prefix = 'MCPConnect\\';
 		if ( strncmp( $class, $prefix, strlen( $prefix ) ) !== 0 ) {
 			return;
 		}
 		$relative = substr( $class, strlen( $prefix ) );
 		$parts    = explode( '\\', $relative );
 		$name     = array_pop( $parts );
-		$dir      = WP_MCP_CONNECT_DIR;
+		$dir      = MCP_CONNECT_DIR;
 		if ( count( $parts ) ) {
 			$dir .= strtolower( implode( '/', $parts ) ) . '/';
 		} else {
@@ -160,11 +160,11 @@ spl_autoload_register(
 	}
 );
 
-\WPMCPConnect\Plugin::instance()->init();
+\MCPConnect\Plugin::instance()->init();
 
 /* ---- tiny assertion runner support ---- */
 
-function wp_mcp_connect_assert( $condition, $message, &$failures, $test ) {
+function mcp_connect_assert( $condition, $message, &$failures, $test ) {
 	if ( ! $condition ) {
 		$failures[] = "  [FAIL] $test: $message";
 		return false;
@@ -172,7 +172,7 @@ function wp_mcp_connect_assert( $condition, $message, &$failures, $test ) {
 	return true;
 }
 
-function wp_mcp_connect_run_tests( $dir ) {
+function mcp_connect_run_tests( $dir ) {
 	$files    = glob( $dir . '/*.test.php' );
 	$failures = array();
 	$pass     = 0;

@@ -1,0 +1,70 @@
+.mcp-connect-wp-admin h1 { margin-bottom: 12px; }
+
+.mcp-connect-wp-content { margin-top: 16px; }
+
+.mcp-connect-wp-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 20px 22px;
+	margin-bottom: 20px;
+	max-width: 840px;
+}
+
+.mcp-connect-wp-card h3 { margin-top: 0; font-size: 15px; }
+
+.mcp-connect-wp-card-head { display: flex; justify-content: space-between; align-items: center; }
+
+.mcp-connect-wp-hero {
+	display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+	background: linear-gradient(135deg, #2271b1 0%, #1d2327 100%);
+	color: #fff; border: 0;
+}
+
+.mcp-connect-wp-hero-text { flex: 1 1 340px; }
+
+.mcp-connect-wp-hero h2 { color: #fff; margin: 0 0 8px; font-size: 20px; }
+
+.mcp-connect-wp-hero p { color: rgba(255,255,255,.85); margin: 0; font-size: 13px; }
+
+.mcp-connect-wp-hero .button-hero { background: #fff; color: #1d2327; border-color: #fff; }
+
+.mcp-connect-wp-hero .button-hero:hover { background: #f0f0f1; }
+
+.mcp-connect-wp-hero .button:disabled { opacity: .6; }
+
+.mcp-connect-wp-test-result { font-weight: 600; }
+
+.mcp-connect-wp-test-result.ok { color: #c3f0c8; }
+
+.mcp-connect-wp-test-result.fail { color: #ffc086; }
+
+.mcp-connect-wp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 840px; }
+
+@media (max-width: 782px) { .mcp-connect-wp-grid { grid-template-columns: 1fr; } }
+
+.mcp-connect-wp-copy { display: flex; align-items: center; gap: 10px; }
+
+.mcp-connect-wp-url {
+	display: block; width: 100%; background: #f0f0f1; border: 1px solid #dcdcde;
+	border-radius: 6px; padding: 10px 12px; overflow-wrap: anywhere;
+}
+
+.mcp-connect-wp-config {
+	background: #1d2327; color: #d1e4f5; border-radius: 6px; padding: 14px 16px;
+	overflow-x: auto; font-size: 12px; white-space: pre-wrap;
+}
+
+.mcp-connect-wp-config code { font-family: monospace; }
+
+.mcp-connect-wp-badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+
+.mcp-connect-wp-ok { background: #dff3e0; color: #166b24; }
+
+.mcp-connect-wp-fail { background: #fbe8e8; color: #b32d2e; }
+
+#mcp-connect-wp-scopes td, #mcp-connect-wp-scopes th { vertical-align: middle; }
+
+.mcp-connect-wp-revoked td { opacity: .5; }
+
+.mcp-connect-wp-log-error td { color: #b32d2e; }

@@ -1,10 +1,10 @@
-# WP MCP Connect
+# MCP Connect for WordPress
 
 **Desarrollado por [Next Boost Peru](http://nextboost.business/)**
 
 Convierte cualquier instalación de WordPress en un **servidor MCP** (Model Context Protocol) con autenticación **OAuth 2.1**, listo para conectarse a ChatGPT, Claude, Claude Code, Cursor y otros agentes de IA.
 
-> El código fuente se encuentra en `wp-mcp-connect/`. La documentación técnica completa está en [docs/](docs/) y el diseño en [ARCHITECTURE.md](ARCHITECTURE.md).
+> El código fuente se encuentra en `mcp-connect-wp/`. La documentación técnica completa está en [docs/](docs/) y el diseño en [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Qué hace
 
@@ -26,15 +26,15 @@ Convierte cualquier instalación de WordPress en un **servidor MCP** (Model Cont
 
 ```bash
 # 1. Copia la carpeta al plugin dir
-cp -r wp-mcp-connect /path/to/wp-content/plugins/
+cp -r mcp-connect-wp /path/to/wp-content/plugins/
 
-# 2. Activa en el panel: Plugins → WP MCP Connect
-# 3. Ajustes → WP MCP Connect → revisa Permisos y copia la "URL del servidor MCP"
+# 2. Activa en el panel: Plugins → MCP Connect for WordPress
+# 3. Ajustes → MCP Connect for WordPress → revisa Permisos y copia la "URL del servidor MCP"
 ```
 
 ## Conectar un agente
 
-Pega la URL del servidor MCP (`https://tusitio.com/wp-json/wp-mcp-connect/v1/mcp`) como URL de servidor MCP en tu cliente.
+Pega la URL del servidor MCP (`https://tusitio.com/wp-json/mcp-connect-wp/v1/mcp`) como URL de servidor MCP en tu cliente.
 
 **Claude Code** (también mostrado en el panel):
 
@@ -42,7 +42,7 @@ Pega la URL del servidor MCP (`https://tusitio.com/wp-json/wp-mcp-connect/v1/mcp
 {
   "mcpServers": {
     "wordpress": {
-      "url": "https://tusitio.com/wp-json/wp-mcp-connect/v1/mcp"
+      "url": "https://tusitio.com/wp-json/mcp-connect-wp/v1/mcp"
     }
   }
 }
@@ -58,8 +58,8 @@ Flujo al conectar:
 ## Estructura
 
 ```
-wp-mcp-connect/
-  wp-mcp-connect.php              Bootstrap, constantes, autoloader
+mcp-connect-wp/
+  mcp-connect-wp.php              Bootstrap, constantes, autoloader
   uninstall.php             Desinstalación (borrado opcional)
   admin/                    Panel: vistas, CSS, JS, pantalla de consentimiento
   includes/
@@ -93,7 +93,7 @@ docs/                       Documentación técnica
 
 ```bash
 # Sintaxis de todos los archivos PHP
-php -l $(find wp-mcp-connect -name '*.php') > /dev/null
+php -l $(find mcp-connect-wp -name '*.php') > /dev/null
 
 # Pruebas unitarias (sin WordPress)
 php tests/run.php
@@ -101,5 +101,5 @@ php tests/run.php
 
 ## Licencia
 
-GPL-2.0-or-later. Ver [wp-mcp-connect/readme.txt](wp-mcp-connect/readme.txt).
+GPL-2.0-or-later. Ver [mcp-connect-wp/readme.txt](mcp-connect-wp/readme.txt).
 # plugin-mcp
