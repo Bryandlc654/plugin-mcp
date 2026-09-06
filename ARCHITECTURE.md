@@ -1,4 +1,4 @@
-# MCP Connect for WordPress — Architecture
+# MCP Connect — Architecture
 
 Version: 1.0.0
 Status: Implementation reference
@@ -16,7 +16,7 @@ transport, as defined by the current MCP specification series
 
 ### Transport: Streamable HTTP
 
-- A single MCP endpoint is exposed: `https://example.com/wp-json/mcp-connect-wp/v1/mcp`
+- A single MCP endpoint is exposed: `https://example.com/wp-json/mcp-connect/v1/mcp`
 - Clients send **one JSON-RPC 2.0 message per HTTP POST**.
 - The server answers either `application/json` (single JSON object) or
   `text/event-stream` (SSE). This server always answers with a single
@@ -60,8 +60,8 @@ Every MCP method requires a valid bearer access token. Missing/invalid tokens re
 The plugin is namespaced `MCPConnect\`. Files:
 
 ```
-mcp-connect-wp/
-├── mcp-connect-wp.php                     # bootstrap, constants, autoloader, hooks
+mcp-connect/
+├── mcp-connect.php                     # bootstrap, constants, autoloader, hooks
 ├── uninstall.php                    # uninstall handler (optional data removal)
 ├── includes/
 │   ├── class-plugin.php             # main container / wiring
@@ -117,7 +117,7 @@ The plugin is simultaneously:
 1. **Protected resource metadata — RFC 9728**
 
    - `GET /.well-known/oauth-protected-resource`
-   - `GET /wp-json/mcp-connect-wp/v1/.well-known/oauth-protected-resource` (path-insertion
+   - `GET /wp-json/mcp-connect/v1/.well-known/oauth-protected-resource` (path-insertion
      fallback so it resolves on sub-directory installs and without permalinks)
    - Contains `resource` (canonical MCP endpoint) and `authorization_servers`
      (`issuer`).
@@ -125,7 +125,7 @@ The plugin is simultaneously:
 2. **Authorization server metadata — RFC 8414**
 
    - `GET /.well-known/oauth-authorization-server`
-   - `GET /wp-json/mcp-connect-wp/v1/.well-known/oauth-authorization-server`
+   - `GET /wp-json/mcp-connect/v1/.well-known/oauth-authorization-server`
    - Contains `issuer`, `authorization_endpoint`, `token_endpoint`,
      `registration_endpoint`, `revocation_endpoint`, `scopes_supported`,
      `response_types_supported`, `grant_types_supported`,
@@ -138,8 +138,8 @@ The plugin is simultaneously:
 
    ```
    HTTP/1.1 401 Unauthorized
-   WWW-Authenticate: Bearer resource_metadata="https://…/wp-json/mcp-connect-wp/v1/.well-known/oauth-protected-resource",
-                     authorization_server="https://…/wp-json/mcp-connect-wp/v1/.well-known/oauth-authorization-server",
+   WWW-Authenticate: Bearer resource_metadata="https://…/wp-json/mcp-connect/v1/.well-known/oauth-protected-resource",
+                     authorization_server="https://…/wp-json/mcp-connect/v1/.well-known/oauth-authorization-server",
                      scope="posts:read posts:write …"
    ```
 
@@ -148,7 +148,7 @@ The plugin is simultaneously:
 
 ### Dynamic Client Registration — RFC 7591
 
-- `POST /wp-json/mcp-connect-wp/v1/oauth/register`
+- `POST /wp-json/mcp-connect/v1/oauth/register`
 - Validates `redirect_uris`, `grant_types`, `response_types`,
   `token_endpoint_auth_method`. Public clients (`none`) get no secret; all
   clients must use PKCE (S256). Confidential clients (`client_secret_basic|post`)
@@ -172,7 +172,7 @@ client ← 302 redirect_uri?code=…&state=…&iss=issuer
 client → POST /oauth/token  (grant_type=authorization_code, code, code_verifier,
          client_id, redirect_uri, resource)
 client ← {access_token, token_type:"Bearer", expires_in, refresh_token, scope}
-client → POST /wp-json/mcp-connect-wp/v1/mcp (Authorization: Bearer …)
+client → POST /wp-json/mcp-connect/v1/mcp (Authorization: Bearer …)
 ```
 
 Security properties:

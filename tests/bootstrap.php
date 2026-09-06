@@ -8,9 +8,9 @@ error_reporting( E_ALL );
 
 define( 'ABSPATH', __DIR__ . '/../' );
 define( 'MCP_CONNECT_VERSION', '1.0.0' );
-define( 'MCP_CONNECT_FILE', __DIR__ . '/../mcp-connect-wp/mcp-connect-wp.php' );
-define( 'MCP_CONNECT_DIR', __DIR__ . '/../mcp-connect-wp/' );
-define( 'MCP_CONNECT_URL', 'https://example.test/wp-content/plugins/mcp-connect-wp/' );
+define( 'MCP_CONNECT_FILE', __DIR__ . '/../mcp-connect/mcp-connect.php' );
+define( 'MCP_CONNECT_DIR', __DIR__ . '/../mcp-connect/' );
+define( 'MCP_CONNECT_URL', 'https://example.test/wp-content/plugins/mcp-connect/' );
 define( 'MCP_CONNECT_MIN_CAP', 'manage_options' );
 define( 'HOUR_IN_SECONDS', 60 * 60 );
 define( 'DAY_IN_SECONDS', 24 * 60 * 60 );

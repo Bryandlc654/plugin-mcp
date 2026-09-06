@@ -8,10 +8,10 @@ Este documento describe cómo el plugin expone el Model Context Protocol.
 - Un único `POST` JSON-RPC 2.0 por petición sobre el endpoint:
 
 ```
-https://<site>/wp-json/mcp-connect-wp/v1/mcp
+https://<site>/wp-json/mcp-connect/v1/mcp
 ```
 
-(La raíz `https://<site>/wp-json/mcp-connect-wp/v1` también responde como heredado, pero la URL canónica es la de `/mcp`).
+(La raíz `https://<site>/wp-json/mcp-connect/v1` también responde como heredado, pero la URL canónica es la de `/mcp`).
 
 - Respuestas `application/json` directas (no se usa SSE).
 - `GET` al endpoint → `405` con cabecera `Allow: POST`.

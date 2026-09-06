@@ -6,14 +6,14 @@ El plugin implementa OAuth 2.1 como servidor de autorización (AS) y como recurs
 
 | Endpoint | Ruta |
 |---|---|
-| MCP (recurso protegido) | `https://<site>/wp-json/mcp-connect-wp/v1/mcp` |
-| Consentimiento | `https://<site>/wp-json/mcp-connect-wp/v1/oauth/authorize` |
-| Token | `https://<site>/wp-json/mcp-connect-wp/v1/oauth/token` |
-| Registro dinámico (DCR) | `https://<site>/wp-json/mcp-connect-wp/v1/oauth/register` |
-| Revocación | `https://<site>/wp-json/mcp-connect-wp/v1/oauth/revoke` |
+| MCP (recurso protegido) | `https://<site>/wp-json/mcp-connect/v1/mcp` |
+| Consentimiento | `https://<site>/wp-json/mcp-connect/v1/oauth/authorize` |
+| Token | `https://<site>/wp-json/mcp-connect/v1/oauth/token` |
+| Registro dinámico (DCR) | `https://<site>/wp-json/mcp-connect/v1/oauth/register` |
+| Revocación | `https://<site>/wp-json/mcp-connect/v1/oauth/revoke` |
 | Protected resource metadata | `/.well-known/oauth-protected-resource` |
 | Authorization server metadata | `/.well-known/oauth-authorization-server` |
-| Alias de descubrimiento (pretty) | `https://<site>/wp-json/mcp-connect-wp/v1/.well-known/*` |
+| Alias de descubrimiento (pretty) | `https://<site>/wp-json/mcp-connect/v1/.well-known/*` |
 
 El `issuer` es `https://<site>/` (misma raíz para `/.well-known/`).
 

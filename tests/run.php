@@ -1,6 +1,6 @@
 <?php
 /**
- * MCP Connect for WordPress unit test runner.
+ * MCP Connect unit test runner.
  * Usage: php tests/run.php
  */
 

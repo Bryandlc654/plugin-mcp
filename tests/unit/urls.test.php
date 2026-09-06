@@ -52,8 +52,8 @@ function test_url_issuer_resource( &$f ) {
 	mcp_connect_assert( $canonical === $u->normalize_resource( '' ), 'empty resource -> canonical', $f, __FUNCTION__ );
 	mcp_connect_assert( $canonical === $u->normalize_resource( $canonical ), 'canonical accepted', $f, __FUNCTION__ );
 	mcp_connect_assert( $canonical === $u->normalize_resource( $canonical . '/' ), 'trailing slash normalized', $f, __FUNCTION__ );
-	mcp_connect_assert( $canonical === $u->normalize_resource( 'https://example.test/wp-json/mcp-connect-wp/v1/mcp' ), 'alias /mcp accepted', $f, __FUNCTION__ );
-	mcp_connect_assert( $canonical === $u->normalize_resource( 'https://example.test/wp-json/mcp-connect-wp/v1' ), 'legacy bare root accepted', $f, __FUNCTION__ );
+	mcp_connect_assert( $canonical === $u->normalize_resource( 'https://example.test/wp-json/mcp-connect/v1/mcp' ), 'alias /mcp accepted', $f, __FUNCTION__ );
+	mcp_connect_assert( $canonical === $u->normalize_resource( 'https://example.test/wp-json/mcp-connect/v1' ), 'legacy bare root accepted', $f, __FUNCTION__ );
 	mcp_connect_assert( null === $u->normalize_resource( 'https://evil.test/other' ), 'foreign resource rejected', $f, __FUNCTION__ );
 }
 

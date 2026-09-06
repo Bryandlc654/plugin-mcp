@@ -1,0 +1,791 @@
+# MCP Connect - Spanish (es_ES)
+# Copyright (C) 2026
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: MCP Connect 1.0.0\n"
+"POT-Creation-Date: 2026-09-04T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-09-04T00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "(tu autorización)"
+msgstr "(tu autorización)"
+
+msgid "Ajustes generales"
+msgstr "Ajustes generales"
+
+msgid "Ajustes guardados."
+msgstr "Ajustes guardados."
+
+msgid "Al autorizar redirigiremos a: %s"
+msgstr "Al autorizar redirigiremos a: %s"
+
+msgid "Alt text for images."
+msgstr "Alt text for images."
+
+msgid "An unexpected error occurred while running the tool."
+msgstr "An unexpected error occurred while running the tool."
+
+msgid "Approving comments requires the moderate_comments capability."
+msgstr "Approving comments requires the moderate_comments capability."
+
+msgid "At least one redirect URI is required."
+msgstr "At least one redirect URI is required."
+
+msgid "Attachment title."
+msgstr "Attachment title."
+
+msgid "Author display name."
+msgstr "Author display name."
+
+msgid "Author email."
+msgstr "Author email."
+
+msgid "Author user ID (requires edit_others_posts)."
+msgstr "Author user ID (requires edit_others_posts)."
+
+msgid "Author user ID."
+msgstr "Author user ID."
+
+msgid "Author website."
+msgstr "Author website."
+
+msgid "Autorizado por"
+msgstr "Autorizado por"
+
+msgid "Autorizar"
+msgstr "Autorizar"
+
+msgid "Back to WordPress"
+msgstr "Back to WordPress"
+
+msgid "Borrado"
+msgstr "Borrado"
+
+msgid "Borrar datos al desinstalar"
+msgstr "Borrar datos al desinstalar"
+
+msgid "Cabeceras proxy"
+msgstr "Cabeceras proxy"
+
+msgid "Cancelar"
+msgstr "Cancelar"
+
+msgid "Category ID to filter by."
+msgstr "Category ID to filter by."
+
+msgid "Category IDs."
+msgstr "Category IDs."
+
+msgid "Category not found."
+msgstr "Category not found."
+
+msgid "Categorías y etiquetas"
+msgstr "Categorías y etiquetas"
+
+msgid "Changing the author requires the edit_others_posts capability."
+msgstr "Changing the author requires the edit_others_posts capability."
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Cliente"
+msgstr "Cliente"
+
+msgid "Clientes registrados"
+msgstr "Clientes registrados"
+
+msgid "Comentarios"
+msgstr "Comentarios"
+
+msgid "Comment not found."
+msgstr "Comment not found."
+
+msgid "Comment status."
+msgstr "Comment status."
+
+msgid "Comprobaciones"
+msgstr "Comprobaciones"
+
+msgid "Comprobación"
+msgstr "Comprobación"
+
+msgid "Comprobando conexión…"
+msgstr "Comprobando conexión…"
+
+msgid "Concedido"
+msgstr "Concedido"
+
+msgid "Conecta tus agentes de IA a este WordPress"
+msgstr "Conecta tus agentes de IA a este WordPress"
+
+msgid "Conectado como"
+msgstr "Conectado como"
+
+msgid "Conectado correctamente"
+msgstr "Conectado correctamente"
+
+msgid "Conectar"
+msgstr "Conectar"
+
+msgid "Conectar agente de IA"
+msgstr "Conectar agente de IA"
+
+msgid "Conexiones autorizadas"
+msgstr "Conexiones autorizadas"
+
+msgid "Conexión HTTPS"
+msgstr "Conexión HTTPS"
+
+msgid "Confiar en X-Forwarded-* (sin activar en entornos no proxy)"
+msgstr "Confiar en X-Forwarded-* (sin activar en entornos no proxy)"
+
+msgid "Configuración para Claude Code"
+msgstr "Configuración para Claude Code"
+
+msgid "Connect %s"
+msgstr "Connect %s"
+
+msgid "Copia esta URL en ChatGPT, Claude, Claude Code, Cursor o cualquier cliente que soporte MCP con OAuth 2.1. El cliente se autenticará con tu usuario y usará solo los permisos que autorices."
+msgstr "Copia esta URL en ChatGPT, Claude, Claude Code, Cursor o cualquier cliente que soporte MCP con OAuth 2.1. El cliente se autenticará con tu usuario y usará solo los permisos que autorices."
+
+msgid "Copiar"
+msgstr "Copiar"
+
+msgid "Could not create the authorization code."
+msgstr "Could not create the authorization code."
+
+msgid "Could not store the client registration."
+msgstr "Could not store the client registration."
+
+msgid "Creado"
+msgstr "Creado"
+
+msgid "Creates a new WordPress page. Use this tool when the user asks to create a new page. The page can be created as draft, pending, private or published, subject to capabilities."
+msgstr "Creates a new WordPress page. Use this tool when the user asks to create a new page. The page can be created as draft, pending, private or published, subject to capabilities."
+
+msgid "Creates a new WordPress post. Use this tool when the user asks to create, write or draft a new article, blog post or post. The post can be created as draft, pending, private or published, subject to the authenticated user's capabilities."
+msgstr "Creates a new WordPress post. Use this tool when the user asks to create, write or draft a new article, blog post or post. The post can be created as draft, pending, private or published, subject to the authenticated user's capabilities."
+
+msgid "Creates a new post category."
+msgstr "Creates a new post category."
+
+msgid "Creates a new post tag."
+msgstr "Creates a new post tag."
+
+msgid "Creating pages requires the edit_pages capability."
+msgstr "Creating pages requires the edit_pages capability."
+
+msgid "Creating posts requires the edit_posts capability."
+msgstr "Creating posts requires the edit_posts capability."
+
+msgid "Criptografía"
+msgstr "Criptografía"
+
+msgid "Código"
+msgstr "Código"
+
+msgid "Delete the underlying file too."
+msgstr "Delete the underlying file too."
+
+msgid "Deletes a WordPress page. Moves it to the trash by default or permanently deletes it when force is true. Destructive action."
+msgstr "Deletes a WordPress page. Moves it to the trash by default or permanently deletes it when force is true. Destructive action."
+
+msgid "Deletes a WordPress post. Moves the post to the trash by default, or permanently deletes it when force is true. This is a destructive action."
+msgstr "Deletes a WordPress post. Moves the post to the trash by default, or permanently deletes it when force is true. This is a destructive action."
+
+msgid "Deletes a media attachment. Destructive action."
+msgstr "Deletes a media attachment. Destructive action."
+
+msgid "Deletes a tag. Destructive action."
+msgstr "Deletes a tag. Destructive action."
+
+msgid "Desactivado"
+msgstr "Desactivado"
+
+msgid "Desinstalación"
+msgstr "Desinstalación"
+
+msgid "Detalle"
+msgstr "Detalle"
+
+msgid "Diagnóstico"
+msgstr "Diagnóstico"
+
+msgid "Dinámico"
+msgstr "Dinámico"
+
+msgid "Dynamic client registration is disabled."
+msgstr "Dynamic client registration is disabled."
+
+msgid "MCP Connect"
+msgstr "MCP Connect"
+
+msgid "MCP Connect"
+msgstr "MCP Connect"
+
+msgid "Editing this comment requires the moderate_comments capability."
+msgstr "Editing this comment requires the moderate_comments capability."
+
+msgid "El plugin está desactivado."
+msgstr "El plugin está desactivado."
+
+msgid "El sitio se sirve por HTTPS."
+msgstr "El sitio se sirve por HTTPS."
+
+msgid "Eliminar"
+msgstr "Eliminar"
+
+msgid "Enlaces permanentes"
+msgstr "Enlaces permanentes"
+
+msgid "Entorno"
+msgstr "Entorno"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Error de conexión"
+msgstr "Error de conexión"
+
+msgid "Escritura"
+msgstr "Escritura"
+
+msgid "Estado"
+msgstr "Estado"
+
+msgid "Estructura: %s"
+msgstr "Estructura: %s"
+
+msgid "Expected MIME type, e.g. image/png."
+msgstr "Expected MIME type, e.g. image/png."
+
+msgid "Faltan funciones de criptografía."
+msgstr "Faltan funciones de criptografía."
+
+msgid "Featured image attachment ID."
+msgstr "Featured image attachment ID."
+
+msgid "Fecha"
+msgstr "Fecha"
+
+msgid "Field to order by."
+msgstr "Field to order by."
+
+msgid "File content base64-encoded."
+msgstr "File content base64-encoded."
+
+msgid "File exceeds the maximum upload size of %d bytes."
+msgstr "File exceeds the maximum upload size of %d bytes."
+
+msgid "Filename including extension, e.g. photo.jpg."
+msgstr "Filename including extension, e.g. photo.jpg."
+
+msgid "Filter by MIME type, e.g. image/ or image/png."
+msgstr "Filter by MIME type, e.g. image/ or image/png."
+
+msgid "Gets a single WordPress page by ID with its full content."
+msgstr "Gets a single WordPress page by ID with its full content."
+
+msgid "Gets a single WordPress post by ID with its full content. Use this tool when the user references a specific post or article."
+msgstr "Gets a single WordPress post by ID with its full content. Use this tool when the user references a specific post or article."
+
+msgid "Gets a single comment by ID."
+msgstr "Gets a single comment by ID."
+
+msgid "Gets a single media attachment by ID."
+msgstr "Gets a single media attachment by ID."
+
+msgid "Gets general information about the WordPress site: name, URL, description, WordPress version, language, timezone, and the connected user. Use this tool first when you need context about the site."
+msgstr "Gets general information about the WordPress site: name, URL, description, WordPress version, language, timezone, and the connected user. Use this tool first when you need context about the site."
+
+msgid "Gets information about the currently authenticated WordPress user represented by the MCP connection. Use this tool to know who is connected and what capabilities they have."
+msgstr "Gets information about the currently authenticated WordPress user represented by the MCP connection. Use this tool to know who is connected and what capabilities they have."
+
+msgid "Guardar ajustes"
+msgstr "Guardar ajustes"
+
+msgid "Guardar permisos"
+msgstr "Guardar permisos"
+
+msgid "HTTPS no está activo: necesitas HTTPS para que los agentes de IA puedan conectarse."
+msgstr "HTTPS no está activo: necesitas HTTPS para que los agentes de IA puedan conectarse."
+
+msgid "Habilitado (responde a peticiones MCP y OAuth)"
+msgstr "Habilitado (responde a peticiones MCP y OAuth)"
+
+msgid "Include the connected user's relevant capabilities."
+msgstr "Include the connected user's relevant capabilities."
+
+msgid "Información"
+msgstr "Información"
+
+msgid "Información del sitio"
+msgstr "Información del sitio"
+
+msgid "Invalid PKCE code verifier."
+msgstr "Invalid PKCE code verifier."
+
+msgid "Invalid nonce."
+msgstr "Invalid nonce."
+
+msgid "Lectura"
+msgstr "Lectura"
+
+msgid "Lists WordPress pages. Use this tool when the user asks to see, list or show their pages (static pages, not blog posts)."
+msgstr "Lists WordPress pages. Use this tool when the user asks to see, list or show their pages (static pages, not blog posts)."
+
+msgid "Lists WordPress posts. Use this tool when the user asks to see, list or show their latest posts, articles or blog posts. Non-published statuses require the edit_posts capability."
+msgstr "Lists WordPress posts. Use this tool when the user asks to see, list or show their latest posts, articles or blog posts. Non-published statuses require the edit_posts capability."
+
+msgid "Lists comments. Use this tool when the user asks to see comments on their site or on a specific post."
+msgstr "Lists comments. Use this tool when the user asks to see comments on their site or on a specific post."
+
+msgid "Lists media attachments on the site. Use this tool when the user asks to see their images, files or media library."
+msgstr "Lists media attachments on the site. Use this tool when the user asks to see their images, files or media library."
+
+msgid "Lists the site's post categories."
+msgstr "Lists the site's post categories."
+
+msgid "Lists the site's post tags."
+msgstr "Lists the site's post tags."
+
+msgid "Logs"
+msgstr "Logs"
+
+msgid "Los agentes se conectarán con tu usuario de administrador y sus capacidades."
+msgstr "Los agentes se conectarán con tu usuario de administrador y sus capacidades."
+
+msgid "Los clientes pueden registrarse dinámicamente."
+msgstr "Los clientes pueden registrarse dinámicamente."
+
+msgid "Los logs nunca contienen tokens ni secretos. Se conservan 90 días y se vacían automáticamente al desactivar el plugin."
+msgstr "Los logs nunca contienen tokens ni secretos. Se conservan 90 días y se vacían automáticamente al desactivar el plugin."
+
+msgid "Managing categories requires the manage_categories capability."
+msgstr "Managing categories requires the manage_categories capability."
+
+msgid "Managing tags requires the manage_categories capability."
+msgstr "Managing tags requires the manage_categories capability."
+
+msgid "Manual"
+msgstr "Manual"
+
+msgid "Marca los permisos que los agentes de IA pueden solicitar. Las piezas destructivas (borrado) están desactivadas por defecto: se ocultan de la lista de herramientas del agente. Recuerda que además el agente solo podrá actuar sobre aquello que tu usuario de WordPress tenga capacidad de hacer (y solo sobre tu propio contenido si no tiene permisos globales)."
+msgstr "Marca los permisos que los agentes de IA pueden solicitar. Las piezas destructivas (borrado) están desactivadas por defecto: se ocultan de la lista de herramientas del agente. Recuerda que además el agente solo podrá actuar sobre aquello que tu usuario de WordPress tenga capacidad de hacer (y solo sobre tu propio contenido si no tiene permisos globales)."
+
+msgid "Media item not found."
+msgstr "Media item not found."
+
+msgid "Menu order."
+msgstr "Menu order."
+
+msgid "Missing code or code_verifier."
+msgstr "Missing code or code_verifier."
+
+msgid "Missing refresh_token."
+msgstr "Missing refresh_token."
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Método"
+msgstr "Método"
+
+msgid "New comment content."
+msgstr "New comment content."
+
+msgid "New comment status."
+msgstr "New comment status."
+
+msgid "Ninguno"
+msgstr "Ninguno"
+
+msgid "Nivel"
+msgstr "Nivel"
+
+msgid "Nivel de log"
+msgstr "Nivel de log"
+
+msgid "No authenticated user found."
+msgstr "No authenticated user found."
+
+msgid "No disponible"
+msgstr "No disponible"
+
+msgid "No existe. Al activar el plugin se crea automáticamente."
+msgstr "No existe. Al activar el plugin se crea automáticamente."
+
+msgid "No hay clientes registrados."
+msgstr "No hay clientes registrados."
+
+msgid "No tienes permisos para acceder a esta página."
+msgstr "No tienes permisos para acceder a esta página."
+
+msgid "No tienes permisos."
+msgstr "No tienes permisos."
+
+msgid "Nombre"
+msgstr "Nombre"
+
+msgid "Non-published pages require the edit_pages capability."
+msgstr "Non-published pages require the edit_pages capability."
+
+msgid "Non-published posts require the edit_posts capability."
+msgstr "Non-published posts require the edit_posts capability."
+
+msgid "Nonce inválido."
+msgstr "Nonce inválido."
+
+msgid "Number of posts to return."
+msgstr "Number of posts to return."
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Only authorization_code and refresh_token grants are supported."
+msgstr "Only authorization_code and refresh_token grants are supported."
+
+msgid "Only comments for this post."
+msgstr "Only comments for this post."
+
+msgid "Only the code response type is supported."
+msgstr "Only the code response type is supported."
+
+msgid "Orígenes CORS extra"
+msgstr "Orígenes CORS extra"
+
+msgid "Page template name."
+msgstr "Page template name."
+
+msgid "Pagination offset."
+msgstr "Pagination offset."
+
+msgid "Parent category ID."
+msgstr "Parent category ID."
+
+msgid "Parent page ID."
+msgstr "Parent page ID."
+
+msgid "Pega esta URL en el cliente MCP. No hace falta configuración adicional: el cliente se registrará y pedirá permiso al conectarse."
+msgstr "Pega esta URL en el cliente MCP. No hace falta configuración adicional: el cliente se registrará y pedirá permiso al conectarse."
+
+msgid "Permanently delete instead of trashing."
+msgstr "Permanently delete instead of trashing."
+
+msgid "Permisos"
+msgstr "Permisos"
+
+msgid "Permisos actualizados."
+msgstr "Permisos actualizados."
+
+msgid "Permisos disponibles para los agentes"
+msgstr "Permisos disponibles para los agentes"
+
+msgid "Permitir que los clientes se registren automáticamente (Dynamic Client Registration)"
+msgstr "Permitir que los clientes se registren automáticamente (Dynamic Client Registration)"
+
+msgid "Plugin activo y servidor habilitado."
+msgstr "Plugin activo y servidor habilitado."
+
+msgid "Post ID."
+msgstr "Post ID."
+
+msgid "Post content (HTML or plain text)."
+msgstr "Post content (HTML or plain text)."
+
+msgid "Post content."
+msgstr "Post content."
+
+msgid "Post excerpt."
+msgstr "Post excerpt."
+
+msgid "Post not found."
+msgstr "Post not found."
+
+msgid "Post status to filter by."
+msgstr "Post status to filter by."
+
+msgid "Post status."
+msgstr "Post status."
+
+msgid "Post title."
+msgstr "Post title."
+
+msgid "Probar conexión"
+msgstr "Probar conexión"
+
+msgid "Publicaciones"
+msgstr "Publicaciones"
+
+msgid "Publishing pages requires the publish_pages capability."
+msgstr "Publishing pages requires the publish_pages capability."
+
+msgid "Publishing posts requires the publish_posts capability."
+msgstr "Publishing posts requires the publish_posts capability."
+
+msgid "Páginas"
+msgstr "Páginas"
+
+msgid "Redirect URIs must be absolute HTTPS URIs, loopback HTTP URIs or custom app schemes without fragments."
+msgstr "Redirect URIs must be absolute HTTPS URIs, loopback HTTP URIs or custom app schemes without fragments."
+
+msgid "Registro de actividad"
+msgstr "Registro de actividad"
+
+msgid "Registro dinámico"
+msgstr "Registro dinámico"
+
+msgid "Registro dinámico desactivado."
+msgstr "Registro dinámico desactivado."
+
+msgid "Resultado"
+msgstr "Resultado"
+
+msgid "Revocada"
+msgstr "Revocada"
+
+msgid "Revocar"
+msgstr "Revocar"
+
+msgid "Scope"
+msgstr "Scope"
+
+msgid "Search term in the title and content."
+msgstr "Search term in the title and content."
+
+msgid "Security check failed. Please reload the page and try again."
+msgstr "Security check failed. Please reload the page and try again."
+
+msgid "Seleccionar todos los disponibles"
+msgstr "Seleccionar todos los disponibles"
+
+msgid "Servidor MCP"
+msgstr "Servidor MCP"
+
+msgid "Sin actividad registrada."
+msgstr "Sin actividad registrada."
+
+msgid "Solo errores"
+msgstr "Solo errores"
+
+msgid "Sort direction."
+msgstr "Sort direction."
+
+msgid "Tabla %s"
+msgstr "Tabla %s"
+
+msgid "Tag ID to filter by."
+msgstr "Tag ID to filter by."
+
+msgid "Tag names or IDs."
+msgstr "Tag names or IDs."
+
+msgid "Tag not found."
+msgstr "Tag not found."
+
+msgid "The account has no read access to this site."
+msgstr "The account has no read access to this site."
+
+msgid "The attachment could not be created."
+msgstr "The attachment could not be created."
+
+msgid "The authenticated WordPress user cannot publish pages."
+msgstr "The authenticated WordPress user cannot publish pages."
+
+msgid "The authenticated WordPress user cannot publish posts."
+msgstr "The authenticated WordPress user cannot publish posts."
+
+msgid "The authorization code is invalid or has already been used."
+msgstr "The authorization code is invalid or has already been used."
+
+msgid "The category could not be deleted."
+msgstr "The category could not be deleted."
+
+msgid "The comment could not be updated."
+msgstr "The comment could not be updated."
+
+msgid "The default category cannot be deleted."
+msgstr "The default category cannot be deleted."
+
+msgid "The file type is not allowed or could not be determined."
+msgstr "The file type is not allowed or could not be determined."
+
+msgid "The filename could not be sanitized."
+msgstr "The filename could not be sanitized."
+
+msgid "The grant type is not supported."
+msgstr "The grant type is not supported."
+
+msgid "The granted scope does not include this tool."
+msgstr "The granted scope does not include this tool."
+
+msgid "The media item could not be deleted."
+msgstr "The media item could not be deleted."
+
+msgid "The page could not be deleted."
+msgstr "The page could not be deleted."
+
+msgid "The post could not be deleted."
+msgstr "The post could not be deleted."
+
+msgid "The provided data is not valid base64."
+msgstr "The provided data is not valid base64."
+
+msgid "The redirect URI does not match the authorization request."
+msgstr "The redirect URI does not match the authorization request."
+
+msgid "The redirect URI does not match the registered client."
+msgstr "The redirect URI does not match the registered client."
+
+msgid "The request could not be processed."
+msgstr "The request could not be processed."
+
+msgid "The requested scope contains scopes that are not supported."
+msgstr "The requested scope contains scopes that are not supported."
+
+msgid "The resource does not match the authorization request."
+msgstr "The resource does not match the authorization request."
+
+msgid "The resource is not valid."
+msgstr "The resource is not valid."
+
+msgid "The tag could not be deleted."
+msgstr "The tag could not be deleted."
+
+msgid "This tool is disabled by the administrator."
+msgstr "This tool is disabled by the administrator."
+
+msgid "Tipo"
+msgstr "Tipo"
+
+msgid "Todo"
+msgstr "Todo"
+
+msgid "Too many attempts."
+msgstr "Too many attempts."
+
+msgid "Too many attempts. Please try again later."
+msgstr "Too many attempts. Please try again later."
+
+msgid "Too many registration attempts. Try again later."
+msgstr "Too many registration attempts. Try again later."
+
+msgid "Tool not found."
+msgstr "Tool not found."
+
+msgid "Tu usuario"
+msgstr "Tu usuario"
+
+msgid "URL del servidor MCP"
+msgstr "URL del servidor MCP"
+
+msgid "URL slug."
+msgstr "URL slug."
+
+msgid "Un agente de IA solicita acceso a"
+msgstr "Un agente de IA solicita acceso a"
+
+msgid "Un origen por línea. Solo para clientes tipo navegador que usen fetch desde otro dominio."
+msgstr "Un origen por línea. Solo para clientes tipo navegador que usen fetch desde otro dominio."
+
+msgid "Unknown client. Please reconnect your AI agent."
+msgstr "Unknown client. Please reconnect your AI agent."
+
+msgid "Unnamed client"
+msgstr "Unnamed client"
+
+msgid "Unsupported token endpoint authentication method."
+msgstr "Unsupported token endpoint authentication method."
+
+msgid "Updates an existing WordPress page."
+msgstr "Updates an existing WordPress page."
+
+msgid "Updates an existing WordPress post. Use this tool when the user asks to edit, change, update or revise a post or article."
+msgstr "Updates an existing WordPress post. Use this tool when the user asks to edit, change, update or revise a post or article."
+
+msgid "Updates an existing category (name, slug, description, parent)."
+msgstr "Updates an existing category (name, slug, description, parent)."
+
+msgid "Updates an existing comment: edits its content or changes its status. Changing a comment not written by you requires the moderate_comments capability."
+msgstr "Updates an existing comment: edits its content or changes its status. Changing a comment not written by you requires the moderate_comments capability."
+
+msgid "Updates an existing tag."
+msgstr "Updates an existing tag."
+
+msgid "Uploading media requires the upload_files capability."
+msgstr "Uploading media requires the upload_files capability."
+
+msgid "Uploads a media file to the WordPress media library. Provide the file bytes base64-encoded. The MIME type, extension and size are validated."
+msgstr "Uploads a media file to the WordPress media library. Provide the file bytes base64-encoded. The MIME type, extension and size are validated."
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Vaciar logs"
+msgstr "Vaciar logs"
+
+msgid "Versión: %s"
+msgstr "Versión: %s"
+
+msgid "Viewing non-approved comments requires the moderate_comments capability."
+msgstr "Viewing non-approved comments requires the moderate_comments capability."
+
+msgid "WordPress"
+msgstr "WordPress"
+
+msgid "You are connected to the WordPress site %s via MCP Connect. Use the available wp_* tools to help the user manage their WordPress content. Respect the user's capabilities and always ask before destructive actions."
+msgstr "You are connected to the WordPress site %s via MCP Connect. Use the available wp_* tools to help the user manage their WordPress content. Respect the user's capabilities and always ask before destructive actions."
+
+msgid "You cannot delete this media item."
+msgstr "You cannot delete this media item."
+
+msgid "You cannot delete this page."
+msgstr "You cannot delete this page."
+
+msgid "You cannot delete this post."
+msgstr "You cannot delete this post."
+
+msgid "You cannot edit this page."
+msgstr "You cannot edit this page."
+
+msgid "You cannot edit this post."
+msgstr "You cannot edit this post."
+
+msgid "You cannot read this unpublished page."
+msgstr "You cannot read this unpublished page."
+
+msgid "You cannot read this unpublished post."
+msgstr "You cannot read this unpublished post."
+
+msgid "You do not have permission to perform this action."
+msgstr "You do not have permission to perform this action."
+
+msgid "ms"
+msgstr "ms"
+
+msgid "random_bytes y hash disponibles."
+msgstr "random_bytes y hash disponibles."
+
+msgid "redirect_uris must be an array of URIs."
+msgstr "redirect_uris must be an array of URIs."
+
+msgid "¡Revisa!"
+msgstr "¡Revisa!"
+
+msgid "¿Eliminar este cliente y todas sus autorizaciones?"
+msgstr "¿Eliminar este cliente y todas sus autorizaciones?"
+
+msgid "¿Revocar esta autorización?"
+msgstr "¿Revocar esta autorización?"
+
+msgid "Área"
+msgstr "Área"
+
+msgid "Último uso"
+msgstr "Último uso"
+
