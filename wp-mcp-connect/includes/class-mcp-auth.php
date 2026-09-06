@@ -58,7 +58,8 @@ final class MCP_Auth {
 		}
 
 		$resource = $row->resource ? $row->resource : $this->url->mcp_endpoint();
-		if ( null === $this->url->normalize_resource( $resource ) ) {
+		$normalized = $this->url->normalize_resource( $resource );
+		if ( null === $normalized || $normalized !== $this->url->normalize_resource( $this->url->mcp_endpoint() ) ) {
 			return null;
 		}
 

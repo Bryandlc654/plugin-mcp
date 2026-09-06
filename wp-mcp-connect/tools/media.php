@@ -67,6 +67,12 @@ return array(
 			'required'             => array( 'id' ),
 			'additionalProperties' => false,
 		),
+		'permission'  => function ( $args, $actor ) {
+			if ( ! isset( $args['id'] ) || ! Permissions::user_has( $actor['user_id'], 'read_post', (int) $args['id'] ) ) {
+				return array( 'allowed' => false, 'code' => 'insufficient_permissions', 'message' => __( 'You do not have permission to read this media item.', 'wp-mcp-connect' ) );
+			}
+			return array( 'allowed' => true );
+		},
 		'handler'     => function ( $args ) {
 			$attachment = get_post( (int) $args['id'] );
 			if ( ! $attachment || 'attachment' !== $attachment->post_type ) {
